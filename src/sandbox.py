@@ -43,14 +43,10 @@ from pynput.keyboard import Key, Listener
 # with Listener(on_press=obj.on_press, on_release=obj.on_release) as listener:
 #     listener.join()
 
-l = np.array(range(-1, 10, 1))
-l2 = l**2
-l_ = np.sqrt(l)
-print(l_)
+l = np.linspace(-1.8, 2, 20)
+l2 = np.linspace(-2, -1, 20)
 print(l)
-print(np.median(l))
 print(l2)
-print(np.median(l2))
-print(np.sqrt(l))
-plt.plot(l, l2)
-plt.show()
+print(np.sign(l))
+print(np.sign(l2))
+print(np.sign(l)*np.sign(l2))
